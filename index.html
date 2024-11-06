@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-          <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Card with Quantity Control and Buy Now</title>
+  <style>
     /* Basic Reset */
     * {
       margin: 0;
@@ -102,6 +101,7 @@
       transition: background-color 0.3s ease, transform 0.2s;
       text-decoration: none;
     }
+
     .buy-now:hover {
       background-color: #218838;
       transform: translateY(-2px);
@@ -114,26 +114,23 @@
         padding: 15px;
       }
     }
-
-
-
-    </style>
+  </style>
 </head>
 <body>
-    <div class="product-card">
-        <img src="men-shoes.jpg" alt="Product Image">
-        <h2>Stylish Men's Shoes</h2>
-        <p class="price">Price: ₹25.00</p>
-        <div class="quantity-controls">
-          <button onclick="decrement()">-</button>
-          <span id="quantity">1</span>
-          <button onclick="increment()">+</button>
-        </div>
-        <a href="#" class="buy-now">Buy Now</a>
-      </div>
-    
-      <script>
-          <script>
+
+  <div class="product-card">
+    <img src="men-shoes.jpg" alt="Product Image">
+    <h2>Stylish Men's Shoes</h2>
+    <p class="price">Price: ₹25.00</p>
+    <div class="quantity-controls">
+      <button onclick="decrement()">-</button>
+      <span id="quantity">1</span>
+      <button onclick="increment()">+</button>
+    </div>
+    <a href="#" class="buy-now">Buy Now</a>
+  </div>
+
+  <script>
     let quantity = 1;
 
     function increment() {
@@ -149,6 +146,5 @@
     }
   </script>
 
-      </script>
 </body>
 </html>
